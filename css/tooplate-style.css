@@ -284,7 +284,7 @@ img {
 
 
 .section-about-us{
-	background-color: rgb(255, 244, 252);	
+	background-color: #F4F4F4;	
 	padding: 20px 0;
 	width: 100%;
 	display: flex;
@@ -413,7 +413,7 @@ img {
 
 /* responsibilites */
 .section-responsibilities{
-	background-color: rgb(255, 244, 252);
+	background-color: #F4F4F4;
 	color: rgba(80, 92, 117);
 	padding: 0 3%;
 }
@@ -642,7 +642,7 @@ bootstrap.min.css,
 /* FOOTER */
 
 footer {
-	background-color: rgba(80, 92, 117);
+	background-color: #304C57;
 	padding: 20px;
 }
 
