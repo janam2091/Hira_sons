@@ -182,6 +182,12 @@ img {
     color: white;
     padding: 10px 42px;
 }
+.text-block-2 h4{
+  color: white;
+}
+.text-block-1 h4{
+  color: white;
+}
 
 @media (min-width: 768px) {
     .container-home {
