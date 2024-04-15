@@ -20,8 +20,8 @@ body {
 }
 
 a {
-  color: #d44457;
-  text-decoration: none;
+  color: rgba(80, 92, 117);
+  text-decoration: none ! important;
 }
 
 img {

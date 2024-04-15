@@ -220,6 +220,10 @@ img {
 	width: 70%;
 	margin-bottom: 7%;
 }
+.rj-container>li>a{
+  color: rgba(80, 92, 117)!important;
+  text-decoration: none !important;
+}
 
 .rj-icons {
 	width: 65%;
