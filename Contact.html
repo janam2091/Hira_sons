@@ -9,31 +9,27 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            
-                    }
+        }
         .container {
-            max-width: 400px; /* Adjust width */
+            max-width: 100%; /* Adjust width */
             margin: 0 auto;
-            padding: 66px;
+            padding: 20px;
             border: 2px solid #ccc;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             background-color: #e7e7e7; /* Background color */
             font-family: 'Playfair Display', serif;
         }
+
         h2 {
             text-align: center;
             margin-top: 0px;
-            font-family: 'Playfair Display', serif;
         }
         .location {
             margin-top: 20px; /* Adjust spacing */
-            font-family: 'Playfair Display', serif;
         }
         .location h3 {
             margin-bottom: 10px;
-            font-family: 'Playfair Display', serif;
-            
         }
         .location p {
             margin-bottom: 5px;
@@ -43,20 +39,27 @@
             height: 200px; /* Adjust height */
             margin-bottom: 10px; /* Adjust spacing */
         }
-        .logo {
+        /* .logo {
             margin-top: -60px;
             display: flex;
-            width: -25px;
-            height: 35px;
-            background-repeat: revert;
-            justify-content: space-evenly;
-            align-content: flex-end;
+            justify-content: center;
+            margin-bottom: 20px;
+        } */
+        .logo {
+            margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-        }
+.logo img {
+    max-width: 20%; /* Set maximum width to ensure the image scales down */
+    height: auto; /* Maintain aspect ratio */
+}
+
         .back-to-home {
             text-align: center;
             margin-top: 20px;
-            font-family: 'Playfair Display', serif;
         }
         .back-to-home a {
             text-decoration: none;
@@ -66,11 +69,99 @@
             border-radius: 5px;
             display: inline-block;
             transition: background-color 0.3s;
-            font-family: 'Playfair Display', serif;
         }
         .back-to-home a:hover {
             background-color: #6aa8c0;
         }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .container {
+                max-width: 100%;
+            }
+            .logo {
+                margin-top: -7px;
+            }
+            .location {
+                padding: 0 20px;
+            }
+            .map-container {
+                height: 150px;
+            }
+        }
+        /* Default styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 100%; /* Adjust width */
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e7e7e7; /* Background color */
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+.location {
+    margin-top: 20px; /* Adjust spacing */
+}
+.location h3 {
+    margin-bottom: 10px;
+}
+.location p {
+    margin-bottom: 5px;
+}
+.map-container {
+    width: 100%;
+    height: 200px; /* Adjust height */
+    margin-bottom: 10px; /* Adjust spacing */
+}
+.logo {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.back-to-home {
+    text-align: center;
+    margin-top: 20px;
+}
+.back-to-home a {
+    text-decoration: none;
+    background-color: #304c57;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.back-to-home a:hover {
+    background-color: #6aa8c0;
+}
+
+/* Media query for screens smaller than 768px (mobile devices) */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Adjust width for smaller screens */
+    }
+    .logo {
+        margin-top: -5px;/* Adjust logo margin for smaller screens */
+    }
+    .location {
+        padding: 0 20px; /* Adjust padding for location elements */
+    }
+    .map-container {
+        height: 150px; /* Adjust map container height for smaller screens */
+    }
+}
+
     </style>
 </head>
 <body>
