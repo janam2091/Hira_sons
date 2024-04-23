@@ -274,6 +274,12 @@ img {
 .rj-container ul {
   margin-left: 10%;
 }
+
+
+
+
+
+
 .about-icon-block {
   width: 7%;
 }
@@ -437,6 +443,15 @@ img {
   flex-wrap: wrap; /* Ensure items wrap to next line on smaller screens */
   gap: 8px; /* Adjust gap between items as needed */
 }
+
+
+@media (max-width: 480px) {
+  .about-icons {
+    transform: rotate(90deg);
+  }
+}
+
+
 
 .about-icon {
   width: calc(
@@ -745,6 +760,14 @@ bootstrap.min.css,
   }
   .about-us-container {
     padding: 0;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .Rotate {
+    transform: rotate(270deg);
   }
 }
 
