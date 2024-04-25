@@ -450,6 +450,11 @@ img {
     transform: rotate(90deg);
   }
 }
+@media (max-width: 720px) {
+  .Rotate {
+    transform: rotate(270deg);
+  }
+}
 
 
 
