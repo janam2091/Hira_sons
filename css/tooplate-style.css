@@ -19,7 +19,7 @@ p {
   font-size: 16px;
   letter-spacing: 1.25px;
   line-height: 24px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .primary-button a {
   display: inline-block;
@@ -33,7 +33,7 @@ p {
   text-decoration: none;
   border-radius: 20px;
   transition: all 0.5s;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .primary-button a:hover {
   background-color: #5c9d7d;
@@ -49,7 +49,7 @@ p {
   text-decoration: none;
   border-radius: 20px;
   transition: all 0.5s;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .white-button a:hover {
   background-color: #121212;
@@ -61,14 +61,14 @@ p {
   text-transform: uppercase;
   font-weight: 700;
   color: #121212;
-  font-family: Playfair Display
+  font-family: Playfair Display;
 }
 .section-heading .line-dec {
   width: 60px;
   height: 3px;
   background-color: #121212;
   margin: 0 auto;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 /* Header */
 .header {
@@ -81,7 +81,7 @@ p {
   transition: all 0.2s ease-in-out;
   height: 80px;
   background-color: #f5f5f5;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   line-height: 40px;
 }
@@ -89,7 +89,7 @@ p {
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
   text-shadow: none;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: bold;
 }
 
@@ -116,7 +116,7 @@ p {
 .header.active .navbar-nav > li > a {
   font-size: 13px;
   font-weight: 300;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-shadow: none;
   color: rgba(80, 92, 117) !important;
 }
@@ -143,10 +143,10 @@ p {
   background-color: white;
   min-height: 400px; /* Ensure a minimum height for the section */
   /* width: 100%; */
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
-@media (max-width: 480px){
-.container-home {
+@media (max-width: 480px) {
+  .container-home {
     position: relative;
     text-align: center;
     margin-top: 70px;
@@ -154,14 +154,14 @@ p {
     background-color: white;
     min-height: 309px;
     /* width: 156%; */
-    font-family: 'Playfair Display', serif;
-}}
-
+    font-family: "Playfair Display", serif;
+  }
+}
 
 .centered {
   text-align: center;
   font-size: 3rem; /* Increase font size */
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 img {
@@ -174,26 +174,25 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  min-height: 400px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5rem;
 }
 
-
 .text-block {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .text-block-1 {
   background-color: #304c57;
   color: white;
   padding: 15px 42px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .text-block-1 h4 {
   color: white;
@@ -205,16 +204,14 @@ img {
     align-items: flex-start;
     /* width: 100%; */
     background-color: white;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
   }
 }
-
-
 
 .responsibility-container {
   display: flex;
   justify-content: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .icons-section1 {
   display: flex;
@@ -225,7 +222,7 @@ img {
 .icons-section2 {
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .rj-container {
@@ -239,14 +236,14 @@ img {
 .rj-container > li > a {
   color: rgba(80, 92, 117) !important;
   text-decoration: none !important;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .rj-icons {
   width: 100%;
   display: flex;
   align-items: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .rj-icons img {
@@ -259,7 +256,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .icons-section2 div {
@@ -277,6 +274,12 @@ img {
 .rj-container ul {
   margin-left: 10%;
 }
+
+
+
+
+
+
 .about-icon-block {
   width: 7%;
 }
@@ -302,6 +305,10 @@ img {
   .centered {
     font-size: 2.3rem;
   }
+  .text-block-1 {
+    background-color: #304c57;
+  }
+
   .text-block-1,
   .text-block-1 h4 {
     font-size: 12px;
@@ -437,6 +444,15 @@ img {
   gap: 8px; /* Adjust gap between items as needed */
 }
 
+
+@media (max-width: 480px) {
+  .about-icons {
+    transform: rotate(90deg);
+  }
+}
+
+
+
 .about-icon {
   width: calc(
     (100% - 4 * 8px) / 5
@@ -512,13 +528,10 @@ img {
   }
 }
 
-
-
-
 @media (max-width: 768px) {
   .section-why-us {
     background-color: white;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to next line if needed */
   }
@@ -572,9 +585,9 @@ img {
 .section-responsibilities {
   background-color: #f4f4f4;
   color: rgba(80, 92, 117);
-  padding: 0%
+  padding: 0%;
 }
-.centeredAlign{
+.centeredAlign {
   text-align: center;
   font-size: -5rem;
 }
@@ -641,7 +654,7 @@ img {
 }
 .resp-h4 h4 {
   font-size: 28px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .img-2 {
   margin-left: 38%;
@@ -727,10 +740,10 @@ bootstrap.min.css,
 /* Media query for screens smaller than 480px (mobile devices) */
 @media (max-width: 480px) {
   .rowFlex {
-      flex-wrap: wrap; /* Wrap items to the next row */
+    flex-wrap: wrap; /* Wrap items to the next row */
   }
   .rowFlex > .col-sm-2 {
-      flex: 1 1 50%; /* Each column takes up 50% of the row's width */
+    flex: 1 1 50%; /* Each column takes up 50% of the row's width */
   }
 }
 
@@ -747,6 +760,15 @@ bootstrap.min.css,
   }
   .about-us-container {
     padding: 0;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .Rotate {
+    transform: rotate(270deg);
+    width: 36px;
   }
 }
 
@@ -775,7 +797,7 @@ bootstrap.min.css,
   background-repeat: no-repeat;
   width: 100%;
   background-size: cover;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 #contact .map img {
@@ -832,25 +854,21 @@ bootstrap.min.css,
   transition: all 0.3s;
 }
 
-
-
 /* FOOTER */
 
 footer {
   background-color: #304c57;
   padding: 0px;
   /* width: 100%; */
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
-
 @media (max-width: 480px) {
-  footer{
+  footer {
     /* width: 167%; */
     display: flex;
-    flex-wrap: wrap; 
-    font-family: 'Playfair Display', serif;
-
+    flex-wrap: wrap;
+    font-family: "Playfair Display", serif;
   }
 }
 
@@ -859,7 +877,7 @@ footer p {
   color: #fff;
   margin-bottom: 0px;
   margin-top: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 footer ul {
@@ -880,7 +898,7 @@ footer ul li a {
   display: inline-block;
   color: white;
   border-radius: 50%;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 footer ul li a:hover {
