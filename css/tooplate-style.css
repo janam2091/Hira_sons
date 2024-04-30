@@ -606,7 +606,7 @@ img {
   text-align: center;
   display: flex;
   flex-direction: column; /* Align items vertically */
-  margin: 0% 10%; /* Adjust margin for better spacing */
+  margin: 0% 0%; /* Adjust margin for better spacing */
   color: rgba(80, 92, 117)
 }
 
@@ -804,6 +804,26 @@ bootstrap.min.css,
 .rowFlex {
   display: flex;
   align-items: center; /* Align items vertically */
+  /* margin-left: 18px; */
+}
+
+.ImgFex{
+  /* padding: auto; */
+  margin-left: -20px;
+}
+
+/* Media query for screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+  .ImgFex{
+    /* padding: auto; */
+    margin-left: 146px;
+  }
+}
+@media (max-width: 768px) {
+  .ImgFex{
+    /* padding: auto; */
+    margin-left: 0px;
+  }
 }
 
 /* Media query for screens smaller than 480px (mobile devices) */
