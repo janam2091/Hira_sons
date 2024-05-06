@@ -85,7 +85,9 @@ p {
   text-align: center;
   line-height: 40px;
 }
-/* navbar */
+
+
+/* Default styles for navbar */
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
   text-shadow: none;
@@ -102,7 +104,6 @@ p {
   color: rgb(64, 87, 102) !important;
   font-size: 13px;
   font-weight: bold;
-  /* text-transform: uppercase; */
   text-shadow: none;
   line-height: 80px;
   padding: 0px;
@@ -115,7 +116,6 @@ p {
 
 .header.active .navbar-nav > li > a {
   font-size: 13px;
-  /* font-weight: 300; */
   font-family: "Playfair Display", serif;
   text-shadow: none;
   font-weight: bold;
@@ -128,12 +128,28 @@ p {
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
+
 .navbar-brand .logo {
   margin-top: 7px;
   display: flex;
   width: 189px;
   height: 60px;
   background-repeat: no-repeat;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    line-height: 60px; /* Adjust line height for smaller screens */
+  }
+  
+  .navbar-nav > li > a {
+    line-height: 60px; /* Adjust line height for smaller screens */
+  }
+  
+  .navbar-nav > li {
+    margin-left: 25px; /* Adjust margin for smaller screens */
+  }
 }
 
 .container-home {
@@ -188,7 +204,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  min-height: 295px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,7 +344,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
   }
 
 
@@ -473,7 +489,7 @@ img {
 
 .section-about-us {
   background-color: #f4f4f4;
-  padding: 25px 0;
+  padding: 60px 0;
   width: 100%;
   display: flex;
 }
@@ -496,7 +512,7 @@ img {
 .about-para {
   padding: 0 8%;
   text-align: justify;
-
+  font-size: larger;
   color: rgba(80, 92, 117)
   
 }
@@ -525,8 +541,8 @@ img {
 
 @media (max-width: 480px) {
   .about-icons {
-    margin-right: -130px;
-    width: 65%; 
+    margin-right: -170px;
+    width: 55%; 
     padding: 10px;
   }
 }
@@ -604,13 +620,14 @@ img {
   min-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px; /* Allow items to wrap to next line if needed */
+  padding: 48px; /* Allow items to wrap to next line if needed */
 }
 
 @media (max-width: 480px) {
   .section-why-us {
     background-color: white;
     width: 100%;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to next line if needed */
   }
@@ -621,6 +638,7 @@ img {
     background-color: white;
     width: 100%;
     display: flex;
+    padding: 0px;
     flex-wrap: wrap; /* Allow items to wrap to next line if needed */
   }
 }
@@ -640,6 +658,13 @@ img {
   color: rgba(80, 92, 117);
   text-align: justify;
   padding: 1px;
+  font-size: larger;
+}
+.res-p  p{
+  color: rgba(80, 92, 117);
+  text-align: justify;
+  padding: 1px;
+  font-size: large;
 }
 
 .why-us-image {
@@ -660,7 +685,7 @@ img {
   }
 
   .why-us-image {
-    width: 230%; /* Make image take half width on larger screens */
+    width: 150%; /* Make image take half width on larger screens */
     margin-top: 0; /* Remove top margin */
     margin-left: auto; /* Move image to right for better alignment */
   }
@@ -672,8 +697,22 @@ img {
 }
 
 @media (max-width: 480px) {
+  .res-p  p{
+    color: rgba(80, 92, 117);
+    text-align: justify;
+    padding: 15px;
+    font-size: large;
+  }
 }
 
+@media (max-width: 768px) {
+  .res-p  p{
+    color: rgba(80, 92, 117);
+    text-align: justify;
+    padding: 15px;
+    font-size: large;
+  }
+}
 /* responsibilites */
 .section-responsibilities {
   background-color: #f4f4f4;
@@ -756,7 +795,7 @@ img {
 .resp-h4 h4 {
   font-size: 30px;
   font-family: "Playfair Display", serif;
-  padding: 35px;
+  padding: 0px;
   margin: 0;
 }
 @media (max-width: 480px) {
