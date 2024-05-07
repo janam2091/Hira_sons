@@ -93,6 +93,7 @@ p {
   text-shadow: none;
   font-family: "Playfair Display", serif;
   font-weight: bold;
+  font-size: 17px;
 }
 
 .navbar-brand {
@@ -115,7 +116,7 @@ p {
 }
 
 .header.active .navbar-nav > li > a {
-  font-size: 13px;
+  font-size: 17px;
   font-family: "Playfair Display", serif;
   text-shadow: none;
   font-weight: bold;
@@ -204,7 +205,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  min-height: 350px;
+  min-height: 370px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -240,6 +241,19 @@ img {
     font-weight: bold;
   }
 }
+
+@media (min-width: 1024px) {
+  .section-about-us {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-about-us {
+    height: 100vh;
+  }
+}
+
 
 /* Mobile styling */
 @media (max-width: 767px) {
@@ -509,49 +523,83 @@ img {
 .about-content h4 {
   text-align: center;
 }
-.about-para {
+/* .about-para {
   padding: 0 8%;
   text-align: justify;
   font-size: larger;
   color: rgba(80, 92, 117)
   
+} */
+
+.about-para {
+  padding: 30px 8%; /* Adjusted padding for better spacing */
+  text-align: justify;
+  font-size: 18px; /* Increased font size for better visibility */
+  color: rgba(80, 92, 117);
+  line-height: 1.6; /* Increased line height for better readability */
+  /* font-family: "Arial", sans-serif; Font family change for clarity */
 }
+
+/* Additional styles for emphasis */
+.about-para strong {
+  font-weight: bold; /* Make strong text bold */
+  color: #333; /* Darken strong text for better contrast */
+}
+
+.about-para em {
+  font-style: italic; /* Make emphasis text italic */
+  color: #555; /* Slightly darken emphasis text */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .about-para {
+      font-size: 16px; /* Decrease font size for smaller screens */
+      padding: 20px 5%; /* Adjusted padding for smaller screens */
+  }
+}
+
 
 .about-icons {
-  width: 50%; /* Ensure the container takes full width */
+  width: 70%;
   display: flex;
-  justify-content: center;
-  align-items: center; /* Center items vertically */
-  flex-wrap: wrap; /* Ensure items wrap to next line on smaller screens */
-  gap: 8px; /* Adjust gap between items as needed */
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 7px;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.about-icons img {
+  width: 60%; /* Decrease image size by 60% */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .about-icons img {
+    width: 50%; /* Adjust image size for smaller screens */
+  }
 }
 
 
-/* @media (max-width: 480px) {
-  .about-icons {
-    transform: rotate(90deg);
-    margin-left: -50px;
-  }
-} */
-/* @media (max-width: 720px) {
-  .Rotate {
-    transform: rotate(270deg);
-  }
-} */
 
 @media (max-width: 480px) {
   .about-icons {
-    margin-right: -170px;
-    width: 55%; 
-    padding: 10px;
+      margin-right: auto; /* Reset margin */
+      margin-left: auto; /* Reset margin */
+      width: 55%;
+      padding: 10px;
+  }
+
+  .about-icons img {
+      display: block; /* Ensure image is centered properly */
+      margin-left: auto;
+      margin-right: auto;
   }
 }
-/* @media (max-width: 720px) {
-  .Rotate {
-    margin-left: 68px;
-    padding: 10px;
-  }
-}  */
+
+
 
 
 
@@ -616,50 +664,85 @@ img {
 /* section-why-us */
 
 .section-why-us {
-  background-color: white;
-  min-width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  padding: 48px; /* Allow items to wrap to next line if needed */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  /* height: 50vh; */
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1024px) {
   .section-why-us {
-    background-color: white;
-    width: 100%;
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    height: 100vh;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .section-why-us {
-    background-color: white;
-    width: 100%;
-    display: flex;
-    padding: 0px;
-    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    height: 60vh;
   }
+}
+
+@media (min-width: 480px) {
+  .section-why-us {
+    height: 85vh;
+  }
+}
+.why-us-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.why-us-image {
+  max-width: 40%;
+  order: 1;
 }
 
 .why-us-desc {
-  text-align: center;
-  display: flex;
-  flex-direction: column; /* Align items vertically */
-  margin: 0% 0%; /* Adjust margin for better spacing */
-  color: rgba(80, 92, 117);
-  padding: 25px;
-  
+  max-width: 50%;
+  order: 2;
 }
 
+@media (max-width: 768px) {
+  .why-us-content {
+    flex-direction: column;
+    display: block;
+      padding: 1px;
+  }
 
-.why-us-desc p {
-  color: rgba(80, 92, 117);
+  .why-us-image,
+  .why-us-desc {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .why-us-text {
+      font-size: 18px;
+      padding: 0px 5%;
+  }
+}
+.Why-us-para {
+  padding: 30px 8%;
   text-align: justify;
-  padding: 1px;
-  font-size: larger;
+  font-size: 20px;
+  color: rgba(80, 92, 117);
+  line-height: 1.6;
 }
+
+
+
+
+
+
+
+
+
 .res-p  p{
   color: rgba(80, 92, 117);
   text-align: justify;
@@ -667,34 +750,13 @@ img {
   font-size: large;
 }
 
-.why-us-image {
-  margin-top: 5%;
-  width: 100%; /* Make image take full width */
-}
 
-.why-us-text {
-  margin-right: auto; /* Move text to left for better alignment */
-  margin-bottom: 20px; /* Add some space between text and image */
-  /* font-weight: 600; */
-}
 
-@media (min-width: 768px) {
-  .why-us-desc {
-    flex-direction: row; /* Display items in a row on larger screens */
-    align-items: center; /* Align items vertically */
-  }
 
-  .why-us-image {
-    width: 150%; /* Make image take half width on larger screens */
-    margin-top: 0; /* Remove top margin */
-    margin-left: auto; /* Move image to right for better alignment */
-  }
 
-  .why-us-text {
-    margin-right: 3%; /* Adjust margin right for better spacing */
-    margin-bottom: 0; /* Reset bottom margin */
-  }
-}
+
+
+
 
 @media (max-width: 480px) {
   .res-p  p{
@@ -793,7 +855,7 @@ img {
   color: rgba(80, 92, 117);
 }
 .resp-h4 h4 {
-  font-size: 30px;
+  font-size: 45px;
   font-family: "Playfair Display", serif;
   padding: 0px;
   margin: 0;
@@ -867,21 +929,7 @@ bootstrap.min.css,
   }
 }
 
-/* @media (max-width: 480px) {
-  .rowFlex {
-    display: flex;
-    align-items: flex-end;
-  }
-  .row img {
-    flex: 0 0 20%;
-    max-width: 70%;
-  }
-  .row h5 {
-    flex: 0 0 20%;
-    max-width: 20%;
-    
-  }
-} */
+
 
 /* Default styles for PCs */
 .rowFlex {
@@ -1363,91 +1411,7 @@ body.lb-disable-scrolling {
   padding: 45px;
 }
 /* csss */
-/* .responsilty {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    align-items: center;
-    padding: 34px;
+.row {
+  margin-right: -1px;
+  margin-left: -34px;
 }
-.responsilty_head{
-	display: flex;
-	flex-direction: column;
-}
-.responsilty_heading2 {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    gap: 26px;
-}
-.responsilty_heading2>img{
-	display: flex;
-	flex-direction:row ;
-	width: 20%;
-}
-.responsilty_headingimg{
-display: flex;
-flex-direction: row;
-}
-
-.photo-gallery {
-	color:#313437;
-	background-color:#fff;
-  }
-  
-  .photo-gallery p {
-	color:#7d8285;
-  }
-  
-  .photo-gallery h2 {
-	font-weight:bold;
-	margin-bottom:40px;
-	padding-top:40px;
-	color:inherit;
-  }
-  
-  @media (max-width:767px) {
-	.photo-gallery h2 {
-	  margin-bottom:25px;
-	  padding-top:25px;
-	  font-size:24px;
-	}
-  }
-  
-  .photo-gallery .intro {
-	font-size:16px;
-	max-width:500px;
-	margin:0 auto 40px;
-  }
-  
-  .photo-gallery .intro p {
-	margin-bottom:0;
-  }
-  
-  .photo-gallery .photos {
-	padding-bottom:20px;
-  }
-  
-  .photo-gallery .item {
-	padding-bottom:30px;
-  }
-  .containerimg {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: stretch;
-}
-.rowphotos {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: center;
-}
-.text-center{
-	background-color: white;
-    margin: 0px 0px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-} */
-
