@@ -55,6 +55,14 @@ p {
   background-color: #121212;
   color: #fff;
 }
+
+
+  .Home-btn {
+    padding: 0px;
+    margin: 20px;
+    margin-left: 24px;
+}
+
 .section-heading h4 {
   text-align: center;
   font-size: 17px;
@@ -156,10 +164,19 @@ p {
 @media (max-width: 1280px) {
   .container-home {
       margin-top: 79px;
-      padding: 150px;
+      padding: 20px; /* Adjust padding for MacBook Air 13-inch */
       min-height: 309px;
   }
 }
+
+@media (max-width: 1480px) {
+  .container-home {
+      margin-top: 79px;
+      padding: 20px; /* Adjust padding for MacBook Air 13-inch */
+      min-height: 309px;
+  }
+}
+
 
 @media (max-width: 480px) {
   .container-home {
@@ -234,11 +251,12 @@ img {
   .container-home {
       flex-direction: row;
       align-items: flex-start;
-      /* width: 100%; */
+      /* width: 100%; */ /* Commented out width as it's not needed */
       background-color: white;
       font-family: "Playfair Display", serif;
   }
 }
+
 .text-block {
   display: flex;
   justify-content: center;
@@ -276,16 +294,19 @@ img {
 }
 @media (min-width: 1280px) {
   .section-about-us {
-    
-    
-      padding: 25px ;
-     
+    padding: 25px;
+    display: flex;
+    margin-bottom: -60px;
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-about-us {
+      padding: 25px;
       display: flex;
       margin-bottom: -60px;
-    
-
       margin-top: 1px;
-  
   }
 }
 
@@ -399,7 +420,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 60%;
   }
 
 
@@ -576,6 +597,17 @@ img {
   /* font-family: "Arial", sans-serif; Font family change for clarity */
 }
 }
+@media (max-width: 1440px) {
+  .about-para {
+    padding: 30px 8%;
+    text-align: justify;
+    font-size: 25px;
+    color: rgba(80, 92, 117);
+    line-height: 1.7;
+    font-family: "Arial", sans-serif;
+  }
+}
+
 
 /* Additional styles for emphasis */
 .about-para strong {
@@ -615,6 +647,13 @@ img {
   
   }
   }
+
+  @media (max-width: 1440px) {
+    .about-icons {
+      margin-top: 50px;
+    }
+  }
+  
 
   @media (max-width: 480px) {
     .about-icons {
@@ -729,7 +768,7 @@ img {
 
 @media (min-width: 1024px) {
   .section-why-us {
-    height: 100vh;
+    height: 80vh;
   }
 }
 
@@ -741,7 +780,7 @@ img {
 
 @media (min-width: 480px) {
   .section-why-us {
-    height: 85vh;
+    height: 65vh;
   }
 }
 

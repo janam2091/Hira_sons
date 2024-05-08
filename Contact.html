@@ -10,14 +10,14 @@
             margin: 0;
             padding: 0;
         }
-        .container {
+        .container1 {
     max-width: 100%;
     margin: 0 auto;
     padding: 0px;
     border: 1px solid #ccc;
     border-radius: 0px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #e7e7e7;
+    background-color: #fffffff1;
     font-family: 'Playfair Display', serif;
 }
 
@@ -36,17 +36,8 @@
         .location p {
             margin-bottom: 5px;
         }
-        .map-container {
-            width: 100%;
-            height: 200px; /* Adjust height */
-            margin-bottom: 10px; /* Adjust spacing */
-        }
-        /* .logo {
-            margin-top: -60px;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        } */
+        
+       
         .logo {
             margin-top: -10px;
     display: flex;
@@ -78,7 +69,7 @@
 
         /* Responsive adjustments */
         @media screen and (max-width: 768px) {
-            .container {
+            .container1 {
                 max-width: 100%;
             }
             .logo {
@@ -87,13 +78,11 @@
             .location {
                 padding: 0 20px;
             }
-            .map-container {
-                height: 150px;
-            }
+            
         }
 
         @media screen and (max-width: 768px) {
-    .container {
+    .container1 {
         max-width: 100%;
     }
 }
@@ -123,11 +112,7 @@ h2 {
 .location p {
     margin-bottom: 5px;
 }
-.map-container {
-    width: 100%;
-    height: 200px; /* Adjust height */
-    margin-bottom: 10px; /* Adjust spacing */
-}
+
 .logo {
     margin-top: 1px;
     display: flex;
@@ -153,7 +138,7 @@ h2 {
 
 /* Media query for screens smaller than 768px (mobile devices) */
 @media screen and (max-width: 768px) {
-    .container {
+    .container1 {
         max-width: 100%; /* Adjust width for smaller screens */
     }
     .logo {
@@ -162,15 +147,33 @@ h2 {
     .location {
         padding: 0 20px; /* Adjust padding for location elements */
     }
-    .map-container {
-        height: 150px; /* Adjust map container height for smaller screens */
-    }
+    
 }
 
+.container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            flex: 1;
+            margin: 10px;
+            padding: 8px;
+            border: 1px solid #ffffffee;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .address {
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <header>
-    <div class="container">
+    <div class="container1">
         <div class="logo">
             <img src="img/hira-sons-logo.png" alt="" />
         </div>
@@ -182,21 +185,22 @@ h2 {
    
     <h2>Contact Us</h2>
     </div>
-    <div class="location">
-        <h3>Mumbai</h3>
-        <p>CC4082 Bharat Diamond Bourse
-           <br> Bandra Kurla Complex
-            <br>Bandra (E), Mumbai - 400051
-            <br>India</p>
-        <p>Email: <a href="mailto:janam@hirasons.in">janam@hirasons.in</a></p>
+    <div class="container">
+        <div class="card">
+            <h2>Mumbai</h2>
+            <div class="address">
+                <p>CC4082 Bharat Diamond Bourse<br>Bandra Kurla Complex<br>Bandra (E), Mumbai - 400051<br>India</p>
+                <p>Email: <a href="mailto:janam@hirasons.in">janam@hirasons.in</a></p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>New York</h2>
+            <div class="address">
+                <p>Company: Avaeta Inc</p>
+                <p>Email: <a href="mailto:avaetainc@gmail.com">avaetainc@gmail.com</a></p>
+            </div>
+        </div>
     </div>
-    
-    <div class="location">
-        <h3>New York</h3>
-        <p>Company: Avaeta Inc</p>
-        <p>Email: <a href="mailto:avaetainc@gmail.com">avaetainc@gmail.com</a></p>
-    </div>
-    
     <div class="back-to-home">
         <a href="./index.html">Back to Home</a>
     </div>
