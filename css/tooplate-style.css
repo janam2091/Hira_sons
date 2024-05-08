@@ -528,6 +528,7 @@ img {
   padding: 60px 0;
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
 }
 @media (max-width: 480px) {
   .section-about-us {
@@ -616,16 +617,12 @@ img {
   }
 
   @media (max-width: 480px) {
-  .about-icons {
-    width: 18%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 15px;
-    align-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-  }
+    .about-icons {
+        margin-right: auto;
+        margin-left: auto;
+        width: 55%;
+        padding: 10px;
+    }
 }
 
 .about-icons img {
@@ -653,6 +650,7 @@ img {
       display: block; /* Ensure image is centered properly */
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 25px;
   }
 }
 
@@ -935,10 +933,11 @@ img {
   color: rgba(80, 92, 117);
 }
 .resp-h4 h4 {
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Playfair Display", serif;
   padding: 0px;
   margin: 0;
+  
 }
 @media (max-width: 480px) {
   .resp-h4 h4 {
