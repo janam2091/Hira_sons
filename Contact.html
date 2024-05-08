@@ -11,15 +11,17 @@
             padding: 0;
         }
         .container {
-            max-width: 100%; /* Adjust width */
-            margin: 0 auto;
-            padding: 20px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: #e7e7e7; /* Background color */
-            font-family: 'Playfair Display', serif;
-        }
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e7e7e7;
+    font-family: 'Playfair Display', serif;
+}
+
+
 
         h2 {
             text-align: center;
@@ -53,7 +55,7 @@
 }
 
 .logo img {
-    max-width: 20%; /* Set maximum width to ensure the image scales down */
+    max-width: 12%; /* Set maximum width to ensure the image scales down */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -89,22 +91,25 @@
                 height: 150px;
             }
         }
+
+        @media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+.logo img {
+    max-width: 20%;
+    height: auto;
+}
+}
         /* Default styles for all screen sizes */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-.container {
-    max-width: 100%; /* Adjust width */
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #e7e7e7; /* Background color */
-    font-family: 'Playfair Display', serif;
-}
+
 h2 {
     text-align: center;
     margin-top: 0px;
@@ -164,32 +169,34 @@ h2 {
 
     </style>
 </head>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="img/hira-sons-logo.png" alt="" />
+        </div>
+    </div>
+</header>
 <body>
 
-<div class="container">
-    <div class="logo">
-        <img src="img/hira-sons-logo.png" alt="" />
-    </div>
+<div class="">
+   
     <h2>Contact Us</h2>
+    </div>
     <div class="location">
         <h3>Mumbai</h3>
-        <!-- <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.499178031003!2d72.82579981438522!3d18.953729087155776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8b77c5c4959%3A0x3896bca07a17d400!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1649764797986!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div> -->
         <p>CC4082 Bharat Diamond Bourse
            <br> Bandra Kurla Complex
-            <br>Bandra (E), Mumbai - 400051
-            <br></be>India</p>
+            <br>Bandra (E), Mumbai - 400051
+            <br>India</p>
         <p>Email: <a href="mailto:janam@hirasons.in">janam@hirasons.in</a></p>
     </div>
+    
     <div class="location">
         <h3>New York</h3>
-        <!-- <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.2948712346536!2d-74.0062023785301!3d40.71272808452465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1649764820287!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div> -->
         <p>Company: Avaeta Inc</p>
         <p>Email: <a href="mailto:avaetainc@gmail.com">avaetainc@gmail.com</a></p>
     </div>
+    
     <div class="back-to-home">
         <a href="./index.html">Back to Home</a>
     </div>
