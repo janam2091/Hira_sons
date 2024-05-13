@@ -308,10 +308,11 @@ img {
       display: flex;
       margin-bottom: -60px;
       margin-top: 1px;
+      height: 50vh;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .section-about-us {
     height: 90vh;
   }
