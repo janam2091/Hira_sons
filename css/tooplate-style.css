@@ -61,6 +61,7 @@ p {
     padding: 0px;
     margin: 20px;
     margin-left: 24px;
+    color: #f0d148;
 }
 
 .section-heading h4 {
@@ -239,7 +240,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  min-height: 500px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -289,7 +290,7 @@ img {
 
 @media (min-width: 1024px) {
   .section-about-us {
-    height: 80vh;
+    height: 100vh;
   }
 }
 @media (min-width: 1280px) {
@@ -312,7 +313,7 @@ img {
 
 @media (min-width: 768px) {
   .section-about-us {
-    height: 75vh;
+    height: 90vh;
   }
 }
 
@@ -546,10 +547,11 @@ img {
 
 .section-about-us {
   background-color: #f4f4f4;
-  padding: 60px 0;
+  padding: 60px 10;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
+  margin-top: 50px;
 }
 @media (max-width: 480px) {
   .section-about-us {
@@ -774,7 +776,7 @@ img {
 
 @media (min-width: 768px) {
   .section-why-us {
-    height: 60vh;
+    height: 100vh;
   }
 }
 
@@ -899,7 +901,7 @@ img {
 .section-responsibilities {
   background-color: #f4f4f4;
   color: rgba(80, 92, 117);
-  padding: 10%;
+  padding: 3%;
 }
 
 .centeredAlign {
@@ -910,6 +912,13 @@ img {
 .cardTitleText{
   margin-top: -30px;
 }
+
+.a {
+  color: rgb(206, 196, 60);
+  text-decoration: none ! important;
+}
+
+
 
 
 .div-imgs {
