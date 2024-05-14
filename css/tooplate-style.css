@@ -167,6 +167,7 @@ p {
       margin-top: 79px;
       padding: 20px; /* Adjust padding for MacBook Air 13-inch */
       min-height: 309px;
+      PADDING-BOTTOM: 324PX;
   }
 }
 
@@ -175,6 +176,7 @@ p {
       margin-top: 79px;
       padding: 20px; /* Adjust padding for MacBook Air 13-inch */
       min-height: 309px;
+      PADDING-BOTTOM: 324PX;
   }
 }
 
@@ -195,6 +197,7 @@ p {
   background-color: white;
   min-height: 400px;
   font-family: "Playfair Display", serif;
+  padding-bottom: 144px;
 }
 
 
@@ -553,6 +556,7 @@ img {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 50px;
+  margin: 10px;
 }
 @media (max-width: 480px) {
   .section-about-us {
@@ -562,7 +566,15 @@ img {
     flex-wrap: wrap; /* Allow items to wrap to next line if needed */
   }
 }
-
+@media (max-width: 390px) {
+  .section-about-us {
+    background-color: #fcf8e340;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-bottom: 245px;
+  }
+}
 
 
 .about-content {
@@ -579,6 +591,12 @@ img {
 .about-content h4 {
   text-align: center;
 
+}
+@media only screen and (max-width: px) {
+  .about-para {
+      font-size: 16px;
+      padding: 20px 5%;
+  }
 }
 
 
