@@ -164,42 +164,65 @@ p {
 
 @media (max-width: 1280px) {
   .container-home {
+    
       margin-top: 79px;
-      padding: 20px; /* Adjust padding for MacBook Air 13-inch */
+      /* padding: 20px; Adjust padding for MacBook Air 13-inch */
       min-height: 309px;
       PADDING-BOTTOM: 324PX;
+      padding: 325px;
+     
+
   }
 }
 
 @media (max-width: 1480px) {
   .container-home {
+    
       margin-top: 79px;
-      padding: 20px; /* Adjust padding for MacBook Air 13-inch */
       min-height: 309px;
       PADDING-BOTTOM: 324PX;
+      padding: 325p; 
   }
 }
 
 
 @media (max-width: 480px) {
   .container-home {
-      margin-top: 0px;
-      padding: 20px;
+    margin-top: 45px;
+      padding: 58px;
       min-height: 200px;
+      padding-top: 200px;
   }
 }
+@media (max-width: 380px) {
+  .container-home {
+    margin-top: 45px;
+      padding: 58px;
+      min-height: 200px;
+      padding-top: 90px;
+  }
+}
+
 
 .container-home {
   position: relative;
   text-align: center;
-  margin-top: 60px;
-  padding: 20px;
+  /* margin-top: 60px; */
+    /* padding: 140px;; */
   background-color: white;
   min-height: 400px;
   font-family: "Playfair Display", serif;
-  padding-bottom: 144px;
+  /* padding-bottom: 144px; */
+  height: 100vh;
 }
+@media (min-width: 480px) {
+  .container-home {
+      margin-top: 0px;
+      padding: 60px;
+      min-height: 200px;
 
+  }
+}
 
 .centered {
   text-align: center;
@@ -230,26 +253,27 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  min-height: 370px;
+    min-height: 266px;;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 0rem;
 }
 @media (min-width: 1280px) {
-.diamond-img-container {
-  max-width: 100%;
-  background-image: url("../img/Diamond_Vector-removebg-preview.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0rem;
+  .diamond-img-container {
+      max-width: 100%;
+      background-image: url(../img/Diamond_Vector-removebg-preview.png);
+      background-repeat: no-repeat;
+      background-position: center; /* Center the background image */
+      background-size: contain;
+      min-height: 266px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0rem;
+  }
 }
-}
+
 
 @media (min-width: 1280px) {
   .container-home {
@@ -258,7 +282,10 @@ img {
       /* width: 100%; */ /* Commented out width as it's not needed */
       background-color: white;
       font-family: "Playfair Display", serif;
+      padding: auto;
+      padding-bottom: 40px;
   }
+
 }
 
 .text-block {
@@ -349,6 +376,7 @@ img {
     /* width: 100%; */
     background-color: white;
     font-family: "Playfair Display", serif;
+    padding: 180px;
   }
 }
 
