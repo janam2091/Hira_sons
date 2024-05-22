@@ -181,48 +181,34 @@ p {
       margin-top: 79px;
       min-height: 309px;
       PADDING-BOTTOM: 324PX;
-      padding: 325p; 
+      padding: 325px; 
   }
 }
 
 
-@media (max-width: 480px) {
-  .container-home {
-    margin-top: 45px;
-      padding: 58px;
-      min-height: 200px;
-      padding-top: 200px;
-  }
-}
-@media (max-width: 380px) {
-  .container-home {
-    margin-top: 45px;
-      padding: 58px;
-      min-height: 200px;
-      padding-top: 90px;
-  }
-}
+
 
 
 .container-home {
   position: relative;
   text-align: center;
   /* margin-top: 60px; */
-    /* padding: 140px;; */
+    padding: 180px;;
   background-color: white;
   min-height: 400px;
   font-family: "Playfair Display", serif;
   /* padding-bottom: 144px; */
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  font-family: "Playfair Display", serif;
+  padding: 20px; /* Adjust as needed */
+  height: 100vh; /* Ensures the container takes full viewport height */
+  box-sizing: border-box;
 }
-@media (min-width: 480px) {
-  .container-home {
-      margin-top: 0px;
-      padding: 60px;
-      min-height: 200px;
 
-  }
-}
 
 .centered {
   text-align: center;
@@ -275,7 +261,7 @@ img {
 }
 
 
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   .container-home {
       flex-direction: row;
       align-items: flex-start;
@@ -369,16 +355,45 @@ img {
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container-home {
-    flex-direction: row;
-    align-items: flex-start;
-    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     font-family: "Playfair Display", serif;
-    padding: 180px;
+    padding: 63px;
+    padding-top: 223px;
   }
 }
+
+@media (max-width: 480px) {
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    padding: 58px;
+    min-height: 200px;
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    padding: 58px;
+    min-height: 200px;
+    padding-top: 90px;
+  }
+}
+
 
 .responsibility-container {
   display: flex;
