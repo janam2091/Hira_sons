@@ -462,9 +462,9 @@ html, body {
 .Imgfram{
 
     display: block;
-    margin-left: auto;
+    margin-left: 0px;
     margin-right: auto;
-    width: 60%;
+    width: 30%;
   }
 
 
