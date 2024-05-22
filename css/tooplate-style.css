@@ -198,15 +198,7 @@ p {
   min-height: 400px;
   font-family: "Playfair Display", serif;
   /* padding-bottom: 144px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- 
-  font-family: "Playfair Display", serif;
-  padding: 20px; /* Adjust as needed */
-  height: 100vh; /* Ensures the container takes full viewport height */
-  box-sizing: border-box;
+  height: 100vh;
 }
 
 
@@ -355,42 +347,46 @@ img {
   color: white;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-family: "Playfair Display", serif;
+  padding: 20px; /* General padding */
+  min-height: 100vh; /* Ensures the container takes full viewport height */
+  box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
   .container-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-family: "Playfair Display", serif;
     padding: 63px;
-    padding-top: 223px;
+    padding-top: 170px;
+    min-height: 100vh; /* Ensures full viewport height */
   }
 }
 
 @media (max-width: 480px) {
   .container-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 45px;
     padding: 58px;
-    min-height: 200px;
-    padding-top: 200px;
+    padding-top: 170px;
+    min-height: 100vh; /* Ensures full viewport height */
   }
 }
 
 @media (max-width: 380px) {
   .container-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-top: 45px;
     padding: 58px;
-    min-height: 200px;
     padding-top: 90px;
+    min-height: 100vh; /* Ensures full viewport height */
   }
 }
 
