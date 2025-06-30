@@ -11,7 +11,6 @@
     font-style: normal;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -28,7 +27,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* width: 100vw; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -130,14 +128,13 @@ body {
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    /* filter: blur(1px); */
     opacity: 0.3;
     z-index: -1;
     background-image: url('imgs/whyus.png')
 }
 
-#rjcScrollArrow{
-bottom: 13px;
+#rjcScrollArrow {
+    bottom: 13px;
 }
 
 .about-container {
@@ -160,23 +157,21 @@ bottom: 13px;
     transform: translateY(0);
 }
 
-/* Centered Section Heading Container */
 .section-heading-container {
     text-align: center;
     margin-bottom: 50px;
 }
 
 .section-heading {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 2.5rem;
     font-weight: 500;
     color: #C9A96E;
     letter-spacing: 0.1em;
-    text-shadow: 0  2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin: 0;
 }
 
-/* Content Section with Image */
 .content-section {
     margin-bottom: 40px;
     display: flex;
@@ -202,7 +197,7 @@ bottom: 13px;
 }
 
 .content-text h3 {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 2rem;
     font-weight: 500;
     color: #C9A96E;
@@ -246,7 +241,7 @@ bottom: 13px;
 }
 
 .contact-info {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 1.1rem;
     color: #666;
     margin-top: 40px;
@@ -298,7 +293,7 @@ bottom: 13px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .logo-image {
         max-width: 450px;
     }
@@ -411,7 +406,6 @@ bottom: 13px;
     width: 70%;
     height: 50%;
     border-radius: 50%;
-    /* background: radial-gradient(ellipse at center, rgba(201,169,110,0.1) 0%, rgba(201,169,110,0.05) 70%, transparent 100%); */
     z-index: 1;
     top: 50%;
     left: 50%;
@@ -420,9 +414,9 @@ bottom: 13px;
 
 .rjc-container {
     max-width: 1200px;
-    /* margin: 0 auto; */
     z-index: 2;
     position: relative;
+    margin: 0 auto;
 }
 
 .rjc-content {
@@ -438,7 +432,7 @@ bottom: 13px;
 }
 
 .rjc-heading {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 2.5rem;
     font-weight: 500;
     color: #C9A96E;
@@ -458,15 +452,12 @@ bottom: 13px;
     width: 100%;
     height: 200px;
     border-radius: 15px;
-    /* box-shadow: 0 15px 35px rgba(0,0,0,0.15); */
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 .rjc-description {
     max-width: 900px;
     margin: 0 auto 60px auto;
     padding: 10px;
-    /* background-image: url('imgs/logo-rjc2020-rgb-1-removebg-preview.png'); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -487,7 +478,7 @@ bottom: 13px;
 }
 
 .rjc-description p {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 1.2rem;
     line-height: 1.8;
     color: #555;
@@ -513,11 +504,6 @@ bottom: 13px;
     border: 1px solid rgba(255,255,255,0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-/* 
-.rjc-value-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-} */
 
 .rjc-value-image {
     margin-bottom: 20px;
@@ -528,15 +514,10 @@ bottom: 13px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    /* transition: transform 0.3s ease; */
 }
 
-/* .rjc-value-image img:hover {
-    transform: scale(1.05);
-} */
-
 .rjc-value-caption {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 1rem;
     font-weight: 500;
     color: #C9A96E;
@@ -557,9 +538,15 @@ bottom: 13px;
 
 /* Responsive Design for RJC Section */
 @media (max-width: 1024px) {
+    .rjc-value-image img{
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 10px;
+    }
     .rjc-values {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 22px;
     }
 }
 
@@ -625,7 +612,7 @@ bottom: 13px;
     }
 
     .rjc-description p {
-        font-size: 1.2 rem;
+        font-size: 1.2rem;
     }
 
     .rjc-values {
@@ -645,12 +632,23 @@ bottom: 13px;
     .rjc-value-caption {
         font-size: 0.8rem;
     }
+
+    /* .footer-contact{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .footer-contact-item{
+        max-width: 25rem;
+    } */
 }
 
 /* Footer Section Styles */
 .footer-section {
     background: linear-gradient(135deg,#304c5a 100%);
-    padding:10px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
     position: relative;
     width: 100%;
 }
@@ -713,7 +711,7 @@ bottom: 13px;
 }
 
 .footer-contact-item h4 {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 1.1rem;
     font-weight: 500;
     color: #C9A96E;
@@ -722,7 +720,7 @@ bottom: 13px;
 }
 
 .footer-contact-item p {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 0.95rem;
     color: #cccccc;
     margin: 0;
@@ -752,7 +750,7 @@ bottom: 13px;
 }
 
 .footer-copyright {
-    font-family: 'Chronical Light Display', serif;
+    font-family: 'Chronical Display Light', serif;
     font-size: 0.9rem;
     color: #999999;
     letter-spacing: 0.05em;
