@@ -550,6 +550,31 @@ body {
     }
 }
 
+@media (max-width : 2560px){
+    .rjc-value-image img{
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .rjc-values {
+        grid-template-columns: repeat(2, 2fr);
+        gap: 22px;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .content-section {
+        padding: 40px 60px;
+    }
+    .rjc-description p {
+        font-size: 1.4rem;
+    }
+    .rjc-value-caption {
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .rjc-section {
         padding: 60px 15px;
@@ -569,9 +594,6 @@ body {
         background-size: contain;
     }
 
-    .rjc-description::before {
-        background: rgba(255, 255, 255, 0.9);
-    }
 
     .rjc-description p {
         font-size: 1.1rem;
@@ -606,17 +628,13 @@ body {
         padding: 25px;
         background-size: cover;
     }
-
-    .rjc-description::before {
-        background: rgba(255, 255, 255, 0.92);
-    }
+    
 
     .rjc-description p {
         font-size: 1.2rem;
     }
 
     .rjc-values {
-        grid-template-columns: 1fr;
         gap: 20px;
     }
 
@@ -632,17 +650,6 @@ body {
     .rjc-value-caption {
         font-size: 0.8rem;
     }
-
-    /* .footer-contact{
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-    }
-
-    .footer-contact-item{
-        max-width: 25rem;
-    } */
 }
 
 /* Footer Section Styles */
