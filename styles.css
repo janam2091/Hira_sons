@@ -362,7 +362,7 @@ body {
     }
     
     .content-text p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .content-text h3 {
@@ -558,26 +558,250 @@ body {
         border-radius: 10px;
     }
     .rjc-values {
-        grid-template-columns: repeat(2, 2fr);
+        /* grid-template-columns: repeat(2, 2fr); */
         gap: 22px;
     }
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-    .content-section {
-        padding: 40px 60px;
+
+    .scroll-arrow{
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 4;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
     }
+    /* First Scroll - Hero Section */
+    .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo-image {
+        max-width: 1300px;
+        width: 90%;
+    }
+    
+    .tagline {
+        font-size: 3rem;
+        letter-spacing: 0.4em;
+        margin-top: 70px;
+    }
+
+    /* Second Scroll - About Section */
+    .about-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 40px;
+    }
+    
+    .about-container {
+        max-width: 1800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .section-heading {
+        font-size: 5rem;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    
+    .content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 80px;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    
+    .content-text {
+        text-align: center;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .content-text p {
+        font-size: 2.5rem;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    /* Third Scroll - RJC Section */
+    .rjc-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 40px;
+    }
+    
+    .rjc-container {
+        max-width: 1800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .rjc-heading {
+        font-size: 5rem;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    
+    .rjc-main-image {
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rjc-main-image img {
+        max-width: 700px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .rjc-description {
+        max-width: 1400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
     .rjc-description p {
+        font-size: 2.5rem;
+        line-height: 1.8;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /* Fourth Scroll - RJC Values + Footer */
+    .rjc-values {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+        margin: 80px 0;
+        max-width: 1800px;
+        width: 100%;
+        justify-items: center;
+    }
+    
+    .rjc-value-item {
+        text-align: center;
+        padding: 40px 30px;
+        background: rgba(255,255,255,0.4);
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        border: 2px solid rgba(255,255,255,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .rjc-value-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .rjc-value-image {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rjc-value-image img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+    .rjc-value-caption {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        font-weight: 600;
+    }
+    
+    .rjc-value-caption a {
+        color: #C9A96E;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .rjc-value-caption a:hover {
+        color: #B8985E;
+        text-decoration: underline;
+    }
+
+    /* Footer adjustments for fourth scroll */
+    .footer-section {
+        padding: 60px 40px 40px 40px;
+        margin-top: 0;
+    }
+    
+    .footer-container {
+        max-width: 1800px;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .footer-logo {
+        flex: 0 0 400px;
+    }
+    
+    .footer-logo-image {
+        max-width: 300px;
+    }
+    
+    .footer-contact {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        gap: 60px;
+    }
+    
+    .footer-contact-item h4 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .footer-contact-item p {
         font-size: 1.4rem;
     }
-    .rjc-value-caption {
+    
+    .footer-copyright {
         font-size: 1.2rem;
+        padding: 0 40px;
     }
 }
 
 @media (max-width: 768px) {
     .rjc-section {
-        padding: 60px 15px;
+        padding: 40px 15px;
     }
 
     .rjc-heading {
@@ -617,29 +841,28 @@ body {
 
 @media (max-width: 480px) {
     .rjc-heading {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .rjc-main-image img {
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .rjc-description {
-        padding: 25px;
+        padding: 2px;
         background-size: cover;
     }
-    
 
     .rjc-description p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .rjc-values {
-        gap: 20px;
+        gap: 10px;
     }
 
     .rjc-value-item {
-        padding: 20px 10px;
+        padding: 0px 5px;
     }
 
     .rjc-value-image img {
@@ -787,7 +1010,7 @@ body {
 
 @media (max-width: 768px) {
     .footer-section {
-        padding: 50px 15px 25px 15px;
+        padding: 40px 15px 25px 15px;
     }
 
     .footer-logo-image {
@@ -819,7 +1042,7 @@ body {
 
 @media (max-width: 480px) {
     .footer-section {
-        padding: 40px 10px 20px 10px;
+        padding: 20px 10px 10px 5px;
     }
 
     .footer-content {
@@ -836,15 +1059,15 @@ body {
 
     .footer-contact-item h4 {
         font-size: 0.95rem;
-        margin-bottom: 6px;
+        margin-bottom: 5px;
     }
 
     .footer-contact-item p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .footer-copyright {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         padding: 0 10px;
     }
 }
