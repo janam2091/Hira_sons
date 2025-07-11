@@ -13,18 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     }
     
-    // Enhanced hover effect for logo
-    const logo = document.querySelector('.logo-image');
-    if (logo) {
-        logo.addEventListener('mouseenter', function() {
-            this.style.transform = 'scale(1.05)';
-            this.style.transition = 'transform 0.3s ease';
-        });
+    // // Enhanced hover effect for logo
+    // const logo = document.querySelector('.logo-image');
+    // if (logo) {
+    //     logo.addEventListener('mouseenter', function() {
+    //         this.style.transform = 'scale(1.05)';
+    //         this.style.transition = 'transform 0.3s ease';
+    //     });
         
-        logo.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-        });
-    }
+    //     logo.addEventListener('mouseleave', function() {
+    //         this.style.transform = 'scale(1)';
+    //     });
+    // }
 
     // Scroll arrow functionality
     const scrollArrow = document.getElementById('scrollArrow');

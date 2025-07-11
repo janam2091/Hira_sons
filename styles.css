@@ -381,6 +381,10 @@ body {
         margin-bottom: 20px;
     }
 
+    #aboutScrollArrow{
+        bottom: 50px;
+    }
+
     .content-section:first-of-type .content-text {
         padding: 30px;
         background-size: cover;
@@ -801,7 +805,7 @@ body {
 
 @media (max-width: 768px) {
     .rjc-section {
-        padding: 40px 15px;
+        padding: 20px 0px;
     }
 
     .rjc-heading {
@@ -958,7 +962,7 @@ body {
 }
 
 .footer-email {
-    color: #C9A96E;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -1037,6 +1041,10 @@ body {
 
     .footer-copyright {
         font-size: 0.85rem;
+    }
+
+    #rjcScrollArrow{
+        display: none;
     }
 }
 
