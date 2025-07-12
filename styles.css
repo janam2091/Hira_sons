@@ -207,7 +207,7 @@ body {
 
 .content-text p {
     font-family: 'Chronical Display Light', serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.8;
     color: #555;
     text-align: justify;
@@ -548,6 +548,7 @@ body {
         object-fit: cover;
         border-radius: 10px;
     }
+
     .rjc-values {
         grid-template-columns: repeat(2, 2fr);
         gap: 22px;
@@ -695,6 +696,10 @@ body {
         line-height: 1.8;
         text-align: center;
         margin-bottom: 40px;
+    }
+
+    #rjcScrollArrow{
+        display: none;
     }
 
     /* Fourth Scroll - RJC Values + Footer */
