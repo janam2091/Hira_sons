@@ -590,11 +590,11 @@ body {
     
     .logo-image {
         max-width: 1300px;
-        width: 90%;
+        width: 100%;
     }
     
     .tagline {
-        font-size: 3rem;
+        font-size: 3.5rem;
         letter-spacing: 0.4em;
         margin-top: 70px;
     }
